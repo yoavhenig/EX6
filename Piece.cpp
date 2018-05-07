@@ -17,7 +17,7 @@ Piece& Piece::operator = (char c){
   return *this;
 }
 
-bool operator == (char c)const{
+bool Piece::operator == (char c)const{
   if (value==c) return true;
   else return false;
 }
