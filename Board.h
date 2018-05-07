@@ -1,12 +1,15 @@
+#pragma once
 #include <iostream>
 #include <string>
+#include "Piece.h"
+#include "coordinate.h"
+#include "IllegalCoordinateException.h"
 using namespace std;
 
-enum Moves {pD, pX, pO};
 class Board{
 private:
   size_t size;
-  Player **board;
+  Piece **board;
 
 
 public:
@@ -17,5 +20,8 @@ public:
 //Methods
 
 friend std::ostream& operator<<(std::ostream& o, Board const& b);
+
+Piece& operator [] (const coordinate& c);
+
 }
 ;
