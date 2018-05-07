@@ -20,4 +20,6 @@ public:
   friend std::ostream& operator<<(std::ostream& o, Piece const& p);
 
   Piece& operator = (char c);
+
+  Piece& operator == (char c)const;
 };

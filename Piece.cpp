@@ -16,3 +16,8 @@ Piece& Piece::operator = (char c){
   value = c;
   return *this;
 }
+
+bool operator == (char c)const{
+  if (value==c) return true;
+  else return false;
+}
