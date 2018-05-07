@@ -25,7 +25,7 @@ Board::~Board(){
 	for(int i=0;i<size;i++){
 		delete board[i];
 	}
-	if (board!=null) delete board;
+	delete board;
 };
 
 
