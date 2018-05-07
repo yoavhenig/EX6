@@ -1,6 +1,6 @@
 #include "Piece.h"
 
-Piece::Piece (char x):value(x){}
+Piece::Piece (char c):value(c){}
 Piece::Piece ():value('.'){}
 
 char Piece::getValue()const{
@@ -12,6 +12,7 @@ std::ostream& operator<<(std::ostream& o, Piece const& p){
 }
 
 Piece& Piece::operator = (char c){
+  if(c!='X'&&c!='O'&&c!='.') throw IllegalCharException(c);
   value = c;
   return *this;
 }
