@@ -23,7 +23,7 @@ Board::Board (Board &b){
 
 Board::~Board(){
 	for(int i=0;i<size;i++){
-		delete board[i];
+		delete *board[i];//here is the new change
 	}
 	delete board;
 };
