@@ -2,7 +2,7 @@
 
 Board::Board (size_t newsize){
 	size=newsize;
-	board=new Piece*[size];
+	board=new Piece[size];// changed this line deleted 8 after the piece
 	for(int i=0;i<size;i++){
 		board[i]=new Piece[size];
 	}
