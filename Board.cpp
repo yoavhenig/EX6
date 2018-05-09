@@ -26,6 +26,7 @@ Board::~Board(){
 		delete board[i];
 	}
 	delete board;
+	delete size;//add this line 9.5.18
 };
 
 
