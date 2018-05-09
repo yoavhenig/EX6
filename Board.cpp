@@ -58,7 +58,6 @@ std::ostream& operator<<(std::ostream& o, Board const& b){
     }
     matrix+="\n";
   }
-	matrix+="\n"; // this is the new change 9.5.18 15:34
   return o<<matrix;
 }
 
