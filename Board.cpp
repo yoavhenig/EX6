@@ -31,6 +31,7 @@ Board::~Board(){
 
 
 Board& Board::operator = (Board newb){
+	this->~Board();
 	size=newb.size;
 	for (int i=0; i<newb.size; i++){
 		for (int j=0; j<newb.size; j++){
